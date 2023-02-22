@@ -122,12 +122,16 @@ class ViewController: UIViewController {
                 withDuration: 3.0,
                                delay: 0.3,
                               animations: {
-                       self.tapForBalanceImg.frame.origin.x = self.tapUi.bounds.maxX - self.tapForBalanceImg.bounds.width
-                  self.tapForBalanceText.text = "10000"
+                                  self.tapForBalanceText.alpha = 0.0;
+                                  self.tapForBalanceText.text = "10000";
+                                  self.tapForBalanceText.alpha = 1.0;
+                                  self.tapForBalanceImg.frame.origin.x = self.tapUi.bounds.maxX - self.tapForBalanceImg.bounds.width
+                  
                        
                })
                { (done) in
-                       self.tapForBalanceText.text = "Tap for balance"
+                   self.tapForBalanceText.text = "Tap for balance"
+                   self.tapForBalanceImg.frame.origin.x = self.tapUi.bounds.minX
                    }
            
                }
