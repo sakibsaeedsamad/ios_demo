@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890A3B3129A7695800FC006D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890A3B3029A7695800FC006D /* CardView.swift */; };
+		8983975E29A779BB0007F4D3 /* PopularServiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983975C29A779BB0007F4D3 /* PopularServiceViewCell.swift */; };
+		8983975F29A779BB0007F4D3 /* PopularServiceViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8983975D29A779BB0007F4D3 /* PopularServiceViewCell.xib */; };
+		8983976229A77C810007F4D3 /* PopularService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983976129A77C810007F4D3 /* PopularService.swift */; };
 		898973D0299E269700756773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898973CF299E269700756773 /* AppDelegate.swift */; };
 		898973D2299E269700756773 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898973D1299E269700756773 /* SceneDelegate.swift */; };
 		898973D4299E269700756773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898973D3299E269700756773 /* ViewController.swift */; };
@@ -14,9 +18,14 @@
 		898973DA299E269700756773 /* TuttProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 898973D8299E269700756773 /* TuttProj.xcdatamodeld */; };
 		898973DC299E269900756773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898973DB299E269900756773 /* Assets.xcassets */; };
 		898973DF299E269900756773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898973DD299E269900756773 /* LaunchScreen.storyboard */; };
+		89C3E6B929AB13790042C61E /* QuickReachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3E6B829AB13790042C61E /* QuickReachViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890A3B3029A7695800FC006D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8983975C29A779BB0007F4D3 /* PopularServiceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularServiceViewCell.swift; sourceTree = "<group>"; };
+		8983975D29A779BB0007F4D3 /* PopularServiceViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularServiceViewCell.xib; sourceTree = "<group>"; };
+		8983976129A77C810007F4D3 /* PopularService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularService.swift; sourceTree = "<group>"; };
 		898973CC299E269700756773 /* TuttProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuttProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898973CF299E269700756773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		898973D1299E269700756773 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,7 @@
 		898973DB299E269900756773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898973DE299E269900756773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		898973E0299E269900756773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C3E6B829AB13790042C61E /* QuickReachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickReachViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +49,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890A3B2E29A7691E00FC006D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				890A3B3529A76F9200FC006D /* PopularServiceViewCell */,
+				890A3B2F29A7692F00FC006D /* CardView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		890A3B2F29A7692F00FC006D /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				890A3B3029A7695800FC006D /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		890A3B3529A76F9200FC006D /* PopularServiceViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8983975C29A779BB0007F4D3 /* PopularServiceViewCell.swift */,
+				8983975D29A779BB0007F4D3 /* PopularServiceViewCell.xib */,
+			);
+			path = PopularServiceViewCell;
+			sourceTree = "<group>";
+		};
+		8983976029A77C680007F4D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8983976129A77C810007F4D3 /* PopularService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		898973C3299E269700756773 = {
 			isa = PBXGroup;
 			children = (
+				8983976029A77C680007F4D3 /* Models */,
+				890A3B2E29A7691E00FC006D /* CustomViews */,
 				898973CE299E269700756773 /* TuttProj */,
 				898973CD299E269700756773 /* Products */,
 			);
@@ -66,6 +112,7 @@
 				898973DD299E269900756773 /* LaunchScreen.storyboard */,
 				898973E0299E269900756773 /* Info.plist */,
 				898973D8299E269700756773 /* TuttProj.xcdatamodeld */,
+				89C3E6B829AB13790042C61E /* QuickReachViewController.swift */,
 			);
 			path = TuttProj;
 			sourceTree = "<group>";
@@ -86,6 +133,8 @@
 			dependencies = (
 			);
 			name = TuttProj;
+			packageProductDependencies = (
+			);
 			productName = TuttProj;
 			productReference = 898973CC299E269700756773 /* TuttProj.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +163,8 @@
 				Base,
 			);
 			mainGroup = 898973C3299E269700756773;
+			packageReferences = (
+			);
 			productRefGroup = 898973CD299E269700756773 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8983975F29A779BB0007F4D3 /* PopularServiceViewCell.xib in Resources */,
 				898973DF299E269900756773 /* LaunchScreen.storyboard in Resources */,
 				898973DC299E269900756773 /* Assets.xcassets in Resources */,
 				898973D7299E269700756773 /* Main.storyboard in Resources */,
@@ -141,10 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C3E6B929AB13790042C61E /* QuickReachViewController.swift in Sources */,
 				898973D4299E269700756773 /* ViewController.swift in Sources */,
 				898973DA299E269700756773 /* TuttProj.xcdatamodeld in Sources */,
 				898973D0299E269700756773 /* AppDelegate.swift in Sources */,
+				8983976229A77C810007F4D3 /* PopularService.swift in Sources */,
 				898973D2299E269700756773 /* SceneDelegate.swift in Sources */,
+				8983975E29A779BB0007F4D3 /* PopularServiceViewCell.swift in Sources */,
+				890A3B3129A7695800FC006D /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
