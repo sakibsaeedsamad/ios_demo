@@ -148,8 +148,8 @@
                         <outlet property="mainView" destination="rUr-Ok-7Xp" id="RO2-nh-Yqn"/>
                         <outlet property="tapForBalanceImg" destination="frc-Pt-3kv" id="51O-HN-fzS"/>
                         <outlet property="tapForBalanceText" destination="gCp-DL-vDO" id="ZGP-1O-dhN"/>
-                        <outlet property="tapUi" destination="Laq-3D-FcI" id="7xw-4R-EY0"/>
                         <outlet property="textLbl" destination="1Cb-qA-Wzd" id="UCA-WB-6g4"/>
+                        <outlet property="uvBalance" destination="Laq-3D-FcI" id="7xw-4R-EY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

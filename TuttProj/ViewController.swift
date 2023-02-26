@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var tapForBalanceImg: UIImageView!
-    @IBOutlet weak var tapUi: UIView!
+    @IBOutlet weak var uvBalance: UIView!
     @IBOutlet weak var tapForBalanceText: UILabel!
     @IBOutlet weak var tapForBalanceTextCenter: NSLayoutConstraint!
     
@@ -145,7 +145,7 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 3.0,
                        delay: 0.0,
                        animations: {
-            self.tapForBalanceImg.frame.origin.x = (self.tapUi.bounds.maxX - self.tapForBalanceImg.bounds.maxX) - 5
+            self.tapForBalanceImg.frame.origin.x = (self.uvBalance.bounds.maxX - self.tapForBalanceImg.bounds.maxX) - 5
             //self.tapForBalanceImg.frame.origin.x = self.tapUi.bounds.minX
             self.tapForBalanceText.alpha = 0.0
             self.tapForBalanceText.text = "10000 BDT"
@@ -156,7 +156,7 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 3.0,delay: 1.0,
                            animations: {
                 
-                self.tapForBalanceImg.frame.origin.x = self.tapUi.bounds.minX + 5
+                self.tapForBalanceImg.frame.origin.x = self.uvBalance.bounds.minX + 5
             },completion: { _ in
                 self.tapForBalanceText.alpha = 0.0
                 self.tapForBalanceText.text = "Tap for balance"
