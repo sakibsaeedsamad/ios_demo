@@ -160,28 +160,29 @@
         <scene sceneID="u11-Gj-eFg">
             <objects>
                 <viewController storyboardIdentifier="QuickReachViewController" id="r16-43-84K" customClass="QuickReachViewController" customModule="TuttProj" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mEN-XO-IAx">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="mEN-XO-IAx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-M3-25O">
                                 <rect key="frame" x="0.0" y="92" width="393" height="804"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="opX-3I-ahW">
-                                        <rect key="frame" x="8" y="8" width="377" height="727"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="opX-3I-ahW">
+                                        <rect key="frame" x="8" y="8" width="377" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhC-1u-93f" customClass="CardView" customModule="TuttProj" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="377" height="727"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="200"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nya-Xv-FbG">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nya-Xv-FbG">
                                                         <rect key="frame" x="8" y="8" width="179" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-rd-uGG">
-                                                        <rect key="frame" x="8" y="33" width="377" height="117"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <rect key="frame" x="8" y="33" width="361" height="117"/>
+                                                        <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ad3-yR-RRv">
                                                             <size key="itemSize" width="97" height="112"/>
@@ -198,17 +199,56 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="nya-Xv-FbG" secondAttribute="trailing" constant="190" id="8zs-u2-fhr"/>
-                                                    <constraint firstItem="nya-Xv-FbG" firstAttribute="leading" secondItem="YhC-1u-93f" secondAttribute="leading" constant="8" id="lZa-WI-b00"/>
-                                                    <constraint firstItem="nya-Xv-FbG" firstAttribute="top" secondItem="YhC-1u-93f" secondAttribute="top" constant="8" id="oFd-VF-dYV"/>
-                                                    <constraint firstAttribute="height" constant="150" id="wSP-VT-Vf7"/>
+                                                    <constraint firstAttribute="height" constant="200" id="8ki-KK-k3H"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRx-Pz-Evp" customClass="CardView" customModule="TuttProj" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="200" width="377" height="200"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whats New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8U-KK-ww6">
+                                                        <rect key="frame" x="5" y="0.0" width="372" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="s8U-KK-ww6" firstAttribute="top" secondItem="bRx-Pz-Evp" secondAttribute="top" id="JEb-GZ-ttV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="s8U-KK-ww6" secondAttribute="trailing" id="XlG-cW-P0Y"/>
+                                                    <constraint firstItem="s8U-KK-ww6" firstAttribute="leading" secondItem="bRx-Pz-Evp" secondAttribute="leading" constant="5" id="prv-sB-zIY"/>
+                                                    <constraint firstAttribute="height" constant="200" id="xL5-M0-zxy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhp-zR-vWU" customClass="CardView" customModule="TuttProj" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="400" width="377" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="Sgn-OH-bSX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSa-IR-9g2" customClass="CardView" customModule="TuttProj" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="600" width="377" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="6Uh-by-Fv8"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="YhC-1u-93f" secondAttribute="trailing" id="XLr-1d-OUn"/>
-                                            <constraint firstItem="YhC-1u-93f" firstAttribute="top" secondItem="opX-3I-ahW" secondAttribute="top" id="Yu6-FO-cqf"/>
-                                            <constraint firstItem="YhC-1u-93f" firstAttribute="leading" secondItem="opX-3I-ahW" secondAttribute="leading" id="sJV-c7-R0d"/>
+                                            <constraint firstItem="hhp-zR-vWU" firstAttribute="leading" secondItem="opX-3I-ahW" secondAttribute="leading" constant="5" id="6ux-Zc-Am8"/>
+                                            <constraint firstAttribute="trailing" secondItem="YhC-1u-93f" secondAttribute="trailing" constant="5" id="8Hc-l5-qyl"/>
+                                            <constraint firstAttribute="trailing" secondItem="hhp-zR-vWU" secondAttribute="trailing" constant="5" id="Epe-Kg-oou"/>
+                                            <constraint firstItem="bRx-Pz-Evp" firstAttribute="top" secondItem="YhC-1u-93f" secondAttribute="bottom" constant="5" id="JoR-tz-2f0"/>
+                                            <constraint firstAttribute="bottom" secondItem="oSa-IR-9g2" secondAttribute="bottom" constant="5" id="Q7j-FT-uTd"/>
+                                            <constraint firstItem="oSa-IR-9g2" firstAttribute="top" secondItem="hhp-zR-vWU" secondAttribute="bottom" constant="5" id="X1t-je-WKz"/>
+                                            <constraint firstAttribute="trailing" secondItem="bRx-Pz-Evp" secondAttribute="trailing" constant="5" id="d3g-N3-YH7"/>
+                                            <constraint firstItem="YhC-1u-93f" firstAttribute="leading" secondItem="opX-3I-ahW" secondAttribute="leading" constant="5" id="dck-IS-ICh"/>
+                                            <constraint firstItem="YhC-1u-93f" firstAttribute="top" secondItem="opX-3I-ahW" secondAttribute="top" id="hik-wo-VzT"/>
+                                            <constraint firstItem="oSa-IR-9g2" firstAttribute="leading" secondItem="opX-3I-ahW" secondAttribute="leading" id="lMR-QV-OFn"/>
+                                            <constraint firstItem="hhp-zR-vWU" firstAttribute="top" secondItem="bRx-Pz-Evp" secondAttribute="bottom" constant="5" id="nnv-Nw-WVp"/>
+                                            <constraint firstAttribute="trailing" secondItem="oSa-IR-9g2" secondAttribute="trailing" id="qNh-7C-dfj"/>
+                                            <constraint firstItem="bRx-Pz-Evp" firstAttribute="leading" secondItem="opX-3I-ahW" secondAttribute="leading" constant="5" id="tAP-qi-pqJ"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -237,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTX-io-Gwt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795" y="-37"/>
+            <point key="canvasLocation" x="1434.3511450381679" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
