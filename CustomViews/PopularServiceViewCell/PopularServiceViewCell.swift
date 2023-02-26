@@ -8,6 +8,8 @@
 import UIKit
 
 class PopularServiceViewCell: UICollectionViewCell {
+    
+    static let identifier = String(describing: PopularServiceViewCell.self)
 
     @IBOutlet weak var popularServiceImageView: UIImageView!
     
@@ -16,6 +18,7 @@ class PopularServiceViewCell: UICollectionViewCell {
     
     func setup(popularService : PopularService){
         
+        popularServiceTitleLbl.text = popularService.name
     }
 
 }
