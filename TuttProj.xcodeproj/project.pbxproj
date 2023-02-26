@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482B30ED437A313763B7716C /* Pods_TuttProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7831867CCB078C410A3F0DC /* Pods_TuttProj.framework */; };
 		890A3B3129A7695800FC006D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890A3B3029A7695800FC006D /* CardView.swift */; };
 		8983975E29A779BB0007F4D3 /* PopularServiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983975C29A779BB0007F4D3 /* PopularServiceViewCell.swift */; };
 		8983975F29A779BB0007F4D3 /* PopularServiceViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8983975D29A779BB0007F4D3 /* PopularServiceViewCell.xib */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B92BEF46EDABB74FB26F4E6 /* Pods-TuttProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuttProj.debug.xcconfig"; path = "Target Support Files/Pods-TuttProj/Pods-TuttProj.debug.xcconfig"; sourceTree = "<group>"; };
+		2C2EE91DEBB8AD108E38645E /* Pods-TuttProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuttProj.release.xcconfig"; path = "Target Support Files/Pods-TuttProj/Pods-TuttProj.release.xcconfig"; sourceTree = "<group>"; };
 		890A3B3029A7695800FC006D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8983975C29A779BB0007F4D3 /* PopularServiceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularServiceViewCell.swift; sourceTree = "<group>"; };
 		8983975D29A779BB0007F4D3 /* PopularServiceViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularServiceViewCell.xib; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		898973DE299E269900756773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		898973E0299E269900756773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C3E6B829AB13790042C61E /* QuickReachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickReachViewController.swift; sourceTree = "<group>"; };
+		B7831867CCB078C410A3F0DC /* Pods_TuttProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuttProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +47,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482B30ED437A313763B7716C /* Pods_TuttProj.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01EF6781E6301DC3EC127AE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B92BEF46EDABB74FB26F4E6 /* Pods-TuttProj.debug.xcconfig */,
+				2C2EE91DEBB8AD108E38645E /* Pods-TuttProj.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		53875C9A8190EC14D2DF7F65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7831867CCB078C410A3F0DC /* Pods_TuttProj.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		890A3B2E29A7691E00FC006D /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +113,8 @@
 				890A3B2E29A7691E00FC006D /* CustomViews */,
 				898973CE299E269700756773 /* TuttProj */,
 				898973CD299E269700756773 /* Products */,
+				01EF6781E6301DC3EC127AE2 /* Pods */,
+				53875C9A8190EC14D2DF7F65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,17 +149,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 898973E3299E269900756773 /* Build configuration list for PBXNativeTarget "TuttProj" */;
 			buildPhases = (
+				15F0262291C2049425DFF7BA /* [CP] Check Pods Manifest.lock */,
 				898973C8299E269700756773 /* Sources */,
 				898973C9299E269700756773 /* Frameworks */,
 				898973CA299E269700756773 /* Resources */,
+				61F9B12E23E7011C6938AB29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TuttProj;
-			packageProductDependencies = (
-			);
 			productName = TuttProj;
 			productReference = 898973CC299E269700756773 /* TuttProj.app */;
 			productType = "com.apple.product-type.application";
@@ -163,8 +188,6 @@
 				Base,
 			);
 			mainGroup = 898973C3299E269700756773;
-			packageReferences = (
-			);
 			productRefGroup = 898973CD299E269700756773 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +210,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15F0262291C2049425DFF7BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuttProj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61F9B12E23E7011C6938AB29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuttProj/Pods-TuttProj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuttProj/Pods-TuttProj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuttProj/Pods-TuttProj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		898973C8299E269700756773 /* Sources */ = {
@@ -342,6 +407,7 @@
 		};
 		898973E4299E269900756773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B92BEF46EDABB74FB26F4E6 /* Pods-TuttProj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +437,7 @@
 		};
 		898973E5299E269900756773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2EE91DEBB8AD108E38645E /* Pods-TuttProj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

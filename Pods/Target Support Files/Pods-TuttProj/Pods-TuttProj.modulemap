@@ -1,0 +1,6 @@
+framework module Pods_TuttProj {
+  umbrella header "Pods-TuttProj-umbrella.h"
+
+  export *
+  module * { export * }
+}
